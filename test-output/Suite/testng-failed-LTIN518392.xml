@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC_002_validate_Headers_and_SubHeaders">
+        <methods>
+          <include name="clickCompany"/>
+          <include name="driverSetup"/>
+          <include name="tearDown"/>
+          <include name="clickSalesResources"/>
+          <include name="clickPeople"/>
+          <include name="clickCorporatefunction"/>
+          <include name="clickServicesLines"/>
+          <include name="clickMarketsandCountries"/>
+        </methods>
+      </class> <!-- testCases.TC_002_validate_Headers_and_SubHeaders -->
+      <class name="testCases.TC_001_validateUserInformation">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="tearDown"/>
+          <include name="user_can_validate_the_mail_contains_cognizant_com"/>
+          <include name="the_user_close_on_user_icon"/>
+          <include name="the_user_navigated_to_the_cognizant_page"/>
+          <include name="the_user_clicks_on_user_icon"/>
+        </methods>
+      </class> <!-- testCases.TC_001_validateUserInformation -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testCases.TC_002_validate_Headers_and_SubHeaders">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="clickCompany"/>
+          <include name="tearDown"/>
+          <include name="clickSalesResources"/>
+          <include name="clickPeople"/>
+          <include name="clickCorporatefunction"/>
+          <include name="clickServicesLines"/>
+          <include name="clickMarketsandCountries"/>
+        </methods>
+      </class> <!-- testCases.TC_002_validate_Headers_and_SubHeaders -->
+      <class name="testCases.TC_001_validateUserInformation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="driverSetup"/>
+          <include name="user_can_validate_the_mail_contains_cognizant_com"/>
+          <include name="the_user_navigated_to_the_cognizant_page"/>
+          <include name="the_user_close_on_user_icon"/>
+          <include name="the_user_clicks_on_user_icon"/>
+        </methods>
+      </class> <!-- testCases.TC_001_validateUserInformation -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

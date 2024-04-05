@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"></listener>
+	</listeners>
+	
+ <test thread-count="5" name="ChromeTest" parallel = "none" >
+  
+	<parameter name="browser" value="Chrome" />
+	
+    <classes>
+   
+		<class name="testCases.TC_001_validateUserInformation" />
+      	<class name="testCases.TC_002_validate_Headers_and_SubHeaders" /> 
+      	<class name="testCases.TC_003_validate_Ethics_And_Compilance" /> 
+      	<class name="testCases.TC_004_validate_ResourceLinks" /> 
+      	<class name="testCases.TC_005_validate_Ethics_page_information" /> 
+      
+    </classes>
+    
+ </test> <!-- Test --> 
+ <test thread-count="5" name="EdgeTest" parallel = "none" >
+  
+	<parameter name="browser" value="Edge" />
+	
+    <classes>
+   
+      	<class name="testCases.TC_001_validateUserInformation" />
+      	<class name="testCases.TC_002_validate_Headers_and_SubHeaders" /> 
+      	<class name="testCases.TC_003_validate_Ethics_And_Compilance" /> 
+      	<class name="testCases.TC_004_validate_ResourceLinks" />
+      	<class name="testCases.TC_005_validate_Ethics_page_information" /> 
+      
+    </classes>
+    
+  </test>
+</suite> <!-- Suite -->
